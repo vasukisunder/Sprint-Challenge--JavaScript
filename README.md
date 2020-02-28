@@ -30,13 +30,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+Both .forEach and .map execute a provided function on every element of an array. The difference between them is that .forEach will execute the provided function but does not return anything, and .map will execute the provided function and also return the results in a new array. 
+
+
 2. What is the difference between a function and a method?
+
+A method is basically a function that belongs to an object. Methods are invoked with an object, such as exampleObject.exampleMethod(); while functions can be invoked on their own, such as exampleFunction();. 
 
 3. What is closure?
 
+A closure essentially refers to all the variables that are in scope when a function definition is created. A closure gives an inner function access to its outer function's scope, and is created at every function definition. Closures help ensure data privacy because the variables enclosed in an inner function are only available in the outer function which contains it.
+
 4. Describe the four rules of the 'this' keyword.
 
+(1) When a function is in the global scope, the "this" keyword inside that function will refer to the window object. (Window Binding)
+(2) When a function is called by a preceding dot, the "this" keyword refers to the object before that dot. (Implicit Binding)
+(3) When a constructor function is used, the "this" keyword will refer to that specific unique instance of the object that the constructor funciton creates and returns. (New Binding)
+(4) When the .call or .apply methods are used, the function is executed in a different context and the "this" keyword is explicitly defined by the first argument passed to the method. (Explicit Binding)
+
 5. Why do we need super() in an extended class?
+
+We use super() in extended classes because it is a method that, when placed in a constructor method inside an extended class, will call the parent's constructor method and get access to the parent's methods and properties.
+
 
 ## Project Set up
 
